@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebStudio</title>
+  <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="images/icon/style.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+  <header class="header">
+    <div id="header_container" class="container">
+      <nav class="navigation">
+        <ul class="ul-navigation">
+          <li class="li-navigation">
+            <div class="logo">
+              <div class="logo1">Web</div>
+              <div class="logo2">Studio</div>
+            </div>
+          </li>
+          <li class="li-navigation li-link-hover" id="li-link_active"><a class="li-link" href="#">Студія</a></li>
+          <li class="li-navigation li-link-hover" id="li-link_active"><a class="li-link" href="portfolio.html">Портфоліо</a></li>
+          <li class="li-navigation li-link-hover" id="li-link_active"><a class="li-link" href="#">Контакти</a></li>
+          <li class="li-navigation"><a class="li-link" href="mailto:info@devstudio.com"><i
+                class="icon-envelope-hover"></i>info@devstudio.com</a></li>
+          <li class="li-navigation"><a class="li-link" id="phone" href="tel:+380961111111"><i
+                class="icon-smartphone"></i>+380 96 111 11 11</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="section1">
+    <div class="container">
+      <h1 class="title" id="main">ЕФЕКТИВНЕ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+      <center><button type="button" class="button open-button" data-modal-open>Замовити послугу</button></center>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="btn" data-modal-close></button>
+          <form action="" class="form">
+            <h1 class="form-title">Залиште свої данні, ми вам передзвонимо</h1>
+            <div class="the_power-of_friendship">
+              <h6 class="h6">Ім'я</h6>
+              
+              <label class="form-input_holder">
+                <i class="icon-Vector"></i>
+                <input class="form-input form-input-one" type="text" name="name" minlength="3" required
+                  pattern="^[a-zA-Z]+\s[a-zA-Z]+$">
+              </label>
+            </div>
+            <div class="the_power-of_friendship">
+              <h6 class="h6">Телефон</h6>
+              <label class="form-input_holder">
+                <i class="icon-Vector-1"></i>
+                <input class="form-input form-input-two" type="tel" name="tel" required min="10" max="20">
+              </label>
+            </div>
+            <div class="the_power-of_friendship">
+              <h6 class="h6">Пошта</h6>
+              <label class="form-input_holder">
+                <i class="icon-Vector-2"></i>
+                <input class="form-input form-input-three" type="email" name="email" required>
+              </label>
+            </div>
+            <div class="the_power-of_friendship">
+              <h6 class="h6">Коментар</h6>
+              
+              <textarea class="form-input " name="message" id="" cols="30" rows="10" placeholder="Введіть текст" required
+                minlength="20"></textarea>
+            </div>
+            <div class="terms-holder">
+              <input class="checkbox" type="checkbox">
+              <p>Погоджуюся з розсилкою та приймаю <a class="terms" href="#">Умови договору</a></p>
+            </div>
+            <button class="form-btn" type="submit">Відправити</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section2">
+    <div class="container">
+      <h3 class="title" id="first">Чому ми</h3>
+      <ul class="mail-list">
+        <li class="mail-item">
+          <div class="mail-div" id="one">
+            <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
+            <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+          </div>
+        </li>
+        <li class="mail-item">
+          <div class="mail-div" id="two">
+            <h3>ПУНКТУАЛЬНІСТЬ</h3>
+            <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе. </p>
+          </div>
+        </li>
+        <li class="mail-item">
+          <div class="mail-div" id="three">
+            <h3>планування</h3>
+            <p>Так само консультація з широким активом значною мірою зумовлює. </p>
+          </div>
+        </li>
+        <li class="mail-item">
+          <div class="mail-div" id="four">
+            <h3>СУЧАснІ ТЕХНОЛОГІЇ</h3>
+            <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section3">
+    <div class="container">
+      <h3 class="title" id="second">Чим ми займаємося</h3>
+      <ul class="wdwd">
+        <li class="li-wdwd"><img class="wdwd-img" src="images/box 2.jpg">
+          <p id="desc-1" class="wdwd-desc">МОБІЛЬНІ ДОДАТКИ</p>
+        </li>
+        <li class="li-wdwd"><img class="wdwd-img" src="images/box 1.jpg">
+          <p id="desc-2" class="wdwd-desc">ДЕСКТОПНІ ДОДАТКИ</p>
+        </li>
+        <li class="li-wdwd"><img class="wdwd-img" src="images/box 3.jpg">
+          <p id="desc-3" class="wdwd-desc">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section4">
+    <div class="container">
+      <h3 class="title" id="thierd">Наша команда</h3>
+      <ul class="ot">
+        <li class="li-ot">
+          <figure class="figure-ot">
+            <img class="img-ot" src="images/img1.jpg">
+            <figcaption class="figurecaption">
+              <h4 class="name-ot">Ігор Дем'яненко</h4>
+              <h4 class="descrip-ot">Product Designer</h4>
+              <div class="section-four-link-list">
+                <a href="" class="section-four-link-item"><i class="icon-instagram-2"></i></a>
+                <a href="" class="section-four-link-item"><i class="icon-twitter-1"></i></a>
+                <a href="" class="section-four-link-item"><i class="icon-facebook-1"></i></a>
+                <a href="" class="section-four-link-item"><i class="icon-linkedin-1"></i></a>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="li-ot">
+          <figure class="figure-ot">
+            <img class="img-ot" src="images/img2.jpg">
+            <figcaption class="figurecaption">
+              <h4 class="name-ot">Ольга Рєпіна</h4>
+              <h4 class="descrip-ot">Frontend Developer</h4>
+              <div class="section-four-link-list">
+                <a href="" class="section-four-link-item"><i class="icon-instagram-2"></i></a>
+                <a href="" class="section-four-link-item"><i class="icon-twitter-1"></i></a>
+                <a href="" class="section-four-link-item"><i class="icon-facebook-1"></i></a>
+                <a href="" class="section-four-link-item"><i class="icon-linkedin-1"></i></a>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="li-ot">
+          <figure class="figure-ot">
+            <img class="img-ot" src="images/img3.jpg">
+            <figcaption class="figurecaption">
+              <h4 class="name-ot">Микола Тарасов</h4>
+              <h4 class="descrip-ot">Marketing</h4>
+              <div class="section-four-link-list">
+                <a href="" class="section-four-link-item"><i class="icon-instagram-2"></i></a>
+                <a href="" class="section-four-link-item"><i class="icon-twitter-1"></i></a>
+                <a href="" class="section-four-link-item"><i class="icon-facebook-1"></i></a>
+                <a href="" class="section-four-link-item"><i class="icon-linkedin-1"></i></a>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="li-ot">
+          <figure class="figure-ot">
+            <img class="img-ot" src="images/img4.jpg">
+            <figcaption class="figurecaption">
+              <h4 class="name-ot">Михайло Єрмаков</h4>
+              <h4 class="descrip-ot">UI Designer</h4>
+              <div class="section-four-link-list">
+                <a href="" class="section-four-link-item"><i class="icon-instagram-2"></i></a>
+                <a href="" class="section-four-link-item"><i class="icon-twitter-1"></i></a>
+                <a href="" class="section-four-link-item"><i class="icon-facebook-1"></i></a>
+                <a href="" class="section-four-link-item"><i class="icon-linkedin-1"></i></a>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="section5">
+    <h2 class="h2-sec5">Постійні клієнти</h2>
+    <ul class="regular-clients-list">
+      <li class="regular-clients-item">
+        <a href="" class="regular-clients-link">
+          <svg class="regular-clients-svg">
+            <use href="./images/symbol-defs.svg#icon-Logo-1"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="regular-clients-item">
+        <a href="" class="regular-clients-link">
+          <svg class="regular-clients-svg">
+            <use href="./images/symbol-defs.svg#icon-Logo"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="regular-clients-item">
+        <a href="" class="regular-clients-link">
+          <svg class="regular-clients-svg">
+            <use href="./images/symbol-defs.svg#icon-Logo-2"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="regular-clients-item">
+        <a href="" class="regular-clients-link">
+          <svg class="regular-clients-svg">
+            <use href="./images/symbol-defs.svg#icon-Logo-3"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="regular-clients-item">
+        <a href="" class="regular-clients-link">
+          <svg class="regular-clients-svg">
+            <use href="./images/symbol-defs.svg#icon-Logo-4"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="regular-clients-item">
+        <a href="" class="regular-clients-link">
+          <svg class="regular-clients-svg">
+            <use href="./images/symbol-defs.svg#icon-Logo-5"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <ul class="info-list-foot">
+        <li>
+          <ul class="info-list-foot-first">
+            <li>
+              <div class="footer-logo">
+                <div class="footer-logo1">Web</div>
+                <div class="footer-logo2">Studio</div>
+              </div>
+            </li>
+            <li class="street-foot">
+              м. Київ, пр-т Лесі Українки, 26
+            </li>
+            <li class="mail-foot">
+              <a href="info@example.com" class="mail-foot-link">
+                info@example.com
+              </a>
+            </li>
+            <li class="phone-foot">
+              <a href="tel:+38 096 111 11 11" class="phone-foot-link">
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h6 class="foot-h6">ПРИЄДНУЙТЕСЬ</h6>
+          <ul class="socials">
+            <li class="li-socials"><a href="" class="a-socials"><i class="icon-instagram-2"></i></a></li>
+            <li class="li-socials"><a href="" class="a-socials"><i class="icon-twitter-1"></i></a></li>
+            <li class="li-socials"><a href="" class="a-socials"><i class="icon-facebook-1"></i></a></li>
+            <li class="li-socials"><a href="" class="a-socials"><i class="icon-linkedin-1"></i></a></li>
+          </ul>
+        </li>
+        <li>
+          <h6 class="foot-h6">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h6>
+          <div class="footer-form-wrap">
+            <label class="footer-form-input_holder">
+              <input class="footer-form-input" type="email" name="email" placeholder="E-mail" required>
+            </label>
+            <button class="subscribe" type="button">Підписатися
+              </button>
+          </div>
+        </li>
+      </ul>
+      <button class="send"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z" fill="white"/>
+        </svg></button>
+    </div>
+  </footer>
+  </div>
+
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>
