@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/normalize.css">
-    <link rel="stylesheet" href="style/portfolio.css">
+    <link rel="stylesheet" href="scss/main.css">
     <link rel="stylesheet" href="images/icon/style.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -17,7 +17,7 @@
 
 
 <body>
-    <header class="header">
+    <header class="header underline">
         <div class="container">
             <nav class="navigation">
                 <ul class="ul-navigation">
@@ -27,7 +27,7 @@
                             <div class="logo2">Studio</div>
                         </div>
                     </li>
-                    <li class="li-navigation" id="li-link_active"><a class="li-link" href="webstudio.html">Студія</a></li>
+                    <li class="li-navigation" id="li-link_active"><a class="li-link" href="index.html">Студія</a></li>
                     <li class="li-navigation" id="li-link_active"><a class="li-link" href="#">Портфоліо</a></li>
                     <li class="li-navigation" id="li-link_active"><a class="li-link" href="#">Контакти</a></li>
                     <li class="li-navigation"><a class="li-link" href="mailto:info@devstudio.com"><i
@@ -259,54 +259,57 @@
             </ul>
         </div>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <ul class="info-list-foot">
+          <ul class="info-list-foot">
+            <li>
+              <ul class="info-list-foot-first">
                 <li>
-                    <ul class="info-list-foot1">
-                        <li>
-                            <div class="footer-logo">
-                                <div class="footer-logo1">Web</div>
-                                <div class="footer-logo2">Studio</div>
-                            </div>
-                        </li>
-                        <li class="street-foot">
-                            м. Київ, пр-т Лесі Українки, 26
-                        </li>
-                        <li class="mail-foot">
-                            <a href="info@example.com" class="mail-foot-link">
-                                info@example.com
-                            </a>
-                        </li>
-                        <li class="phone-foot">
-                            <a href="+38 096 111 11 11" class="phone-foot-link">
-                                +38 096 111 11 11
-                            </a>
-                        </li>
-
-                    </ul>
+                  <div class="footer-logo">
+                    <div class="footer-logo1">Web</div>
+                    <div class="footer-logo2">Studio</div>
+                  </div>
                 </li>
-                <li>
-                    <h6 class="foot-h6">ПРИЄДНУЙТЕСЬ</h6>
-                    <ul class="socials">
-                        <li class="li-socials"><a href="" class="a-socials"><i class="icon-instagram-2"></i></a></li>
-                        <li class="li-socials"><a href="" class="a-socials"><i class="icon-twitter-1"></i></a></li>
-                        <li class="li-socials"><a href="" class="a-socials"><i class="icon-facebook-1"></i></a></li>
-                        <li class="li-socials"><a href="" class="a-socials"><i class="icon-linkedin-1"></i></a></li>
-                    </ul>
+                <li class="street-foot">
+                  м. Київ, пр-т Лесі Українки, 26
                 </li>
-                <li>
-                    <h6 class="foot-h6">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h6>
-                    <div class="footer-form-wrap">
-                      <label class="footer-form-input_holder">
-                        <input class="footer-form-input" type="email" name="email" placeholder="E-mail" required>
-                      </label>
-                      <button class="subscribe" type="button">Підписатися</button>
-                    </div>
-                  </li>
-            </ul>
+                <li class="mail-foot">
+                  <a href="info@example.com" class="mail-foot-link">
+                    info@example.com
+                  </a>
+                </li>
+                <li class="phone-foot">
+                  <a href="tel:+38 096 111 11 11" class="phone-foot-link">
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h6 class="foot-h6">ПРИЄДНУЙТЕСЬ</h6>
+              <ul class="socials">
+                <li class="li-socials"><a href="" class="a-socials"><i class="icon-instagram-2"></i></a></li>
+                <li class="li-socials"><a href="" class="a-socials"><i class="icon-twitter-1"></i></a></li>
+                <li class="li-socials"><a href="" class="a-socials"><i class="icon-facebook-1"></i></a></li>
+                <li class="li-socials"><a href="" class="a-socials"><i class="icon-linkedin-1"></i></a></li>
+              </ul>
+            </li>
+            <li>
+              <h6 class="foot-h6">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h6>
+              <div class="footer-form-wrap">
+                <label class="footer-form-input_holder">
+                  <input class="footer-form-input" type="email" name="email" placeholder="E-mail" required>
+                </label>
+                <button class="subscribe" type="button">Підписатися
+                  </button>
+              </div>
+            </li>
+          </ul>
+          <button class="send"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z" fill="white"/>
+            </svg></button>
         </div>
-    </footer>
+      </footer>
 </body>
 
 
