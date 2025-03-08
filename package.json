@@ -1,0 +1,15 @@
+{
+  "name": "webstudio-sass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "complie-sass": "node-sass scss/main.scss"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
