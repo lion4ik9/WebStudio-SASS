@@ -9,6 +9,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 
 nav ul {
@@ -141,22 +142,15 @@ nav ul {
   border-bottom: 1px solid #ECECEC;
 }
 
-.burger_adaptation {
+.js-open-menu {
   display: none;
+  width: 24px;
+  height: 16px;
+  background-image: url("/images/menu_24px.svg");
+  border: none;
 }
 
-/* nav-menu */
-nav {
-  width: 93%;
-}
-
-.navigation__ul a,
-.join_block {
-  font-weight: 400;
-}
-
-input[type=checkbox],
-.burger {
+.menu-container {
   display: none;
 }
 
@@ -165,53 +159,8 @@ input[type=checkbox],
   nav {
     order: 1;
   }
-  .burger {
-    display: block;
-    height: 30px;
-    width: 30px;
-    position: relative;
-  }
-  .burger:hover {
-    cursor: pointer;
-  }
-  .burger span {
-    top: 15px;
-  }
-  .burger span,
-  .burger span::before,
-  .burger span::after {
-    content: "";
-    display: block;
-    width: 25px;
-    height: 2px;
-    background: #333;
-    position: absolute;
-    right: 0;
-    transition: 0.3s;
-  }
-  .burger span::before {
-    top: -8px;
-  }
-  .burger span::after {
-    top: 8px;
-  }
   .navigation__ul {
     display: none;
-  }
-  input[type=checkbox]:checked ~ .navigation__ul {
-    display: flex;
-    flex-direction: column;
-  }
-  input[type=checkbox]:checked ~ .burger span {
-    transform: rotate(-45deg);
-  }
-  input[type=checkbox]:checked ~ .burger span::before {
-    top: 0;
-    transform: rotate(0);
-  }
-  input[type=checkbox]:checked ~ .burger span::after {
-    top: 0;
-    transform: rotate(90deg);
   }
   .navigation__ul {
     position: absolute;
@@ -227,6 +176,9 @@ input[type=checkbox],
   .navigation__li {
     height: 40px;
     font-size: 40px;
+  }
+  .menu-toggle {
+    display: flex;
   }
 }
 #main {
@@ -605,6 +557,7 @@ figure {
   width: 18px;
   height: 18px;
   animation: sec-four-link 250ms cubic-bezier(0.4, 0, 0.2, 1) both;
+  box-sizing: initial;
 }
 
 @keyframes sec-four-link {
@@ -812,6 +765,7 @@ footer {
   width: 18px;
   height: 18px;
   animation: socials 250ms cubic-bezier(0.4, 0, 0.2, 1) both;
+  box-sizing: initial;
 }
 
 @keyframes socials {
@@ -884,6 +838,11 @@ footer {
 .send:active {
   animation: secret 10s 1s ease both;
   border: none;
+}
+
+.send-mobile {
+  display: none;
+  margin-left: 10px;
 }
 
 @keyframes secret {
@@ -1209,6 +1168,9 @@ main {
   .send {
     display: none;
   }
+  .send-mobile {
+    display: block;
+  }
   .navigation__li:nth-child(3) {
     margin-right: 10%;
   }
@@ -1293,15 +1255,6 @@ main {
   .container {
     width: 540px;
   }
-  .navigation__li:nth-child(1) {
-    margin-right: 0;
-  }
-  .navigation__li:not(:last-child) {
-    margin-right: 0;
-  }
-  .navigation__li:nth-child(4) {
-    margin-right: 0;
-  }
   .navigation {
     justify-content: end;
   }
@@ -1327,6 +1280,9 @@ main {
   .btn {
     left: 95%;
   }
+  .menu-container {
+    display: block;
+  }
   /* portfolio */
   .product {
     flex-basis: calc((100% - 30px) / 2);
@@ -1345,8 +1301,23 @@ main {
     width: 90%;
     padding: 0 15px;
   }
-  .navigation {
-    width: 60%;
+  .footer__form-input_holder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .footer__form-input {
+    width: 90%;
+  }
+  .footer__info-list > li:nth-child(3) {
+    width: 100%;
+  }
+  /* portfolio */
+  .catalogs-ul {
+    flex-wrap: wrap;
+  }
+  .product {
+    flex-basis: 100%;
   }
 }
 body {
@@ -1429,4 +1400,62 @@ div {
 .section5.container {
   display: flex;
   align-items: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2x) {
+  .section1 {
+    background-image: url("../images/mainImg@2.png");
+  }
+}
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #3f51b5;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  justify-self: end;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */

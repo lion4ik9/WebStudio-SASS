@@ -106,6 +106,7 @@ footer {
     width: 18px;
     height: 18px;
     animation: socials 250ms cubic-bezier(0.4, 0, 0.2, 1) both;
+    box-sizing: initial;
     }
 
     @keyframes socials {
@@ -183,6 +184,11 @@ footer {
     .send:active {
         animation: secret 10s 1s ease both;
         border: none;
+    }
+
+    .send-mobile {
+        display: none;
+        margin-left: 10px;
     }
     
     @keyframes secret {
